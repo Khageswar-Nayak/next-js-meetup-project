@@ -1,0 +1,6 @@
+node_modules
+.next
+vercel.svg
+favicon.ico
+package-lock.json
+package.json
