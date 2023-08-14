@@ -17,6 +17,14 @@ const DUMMY_MEETUPS = [
     address: "bbbbb",
     description: "this is the second meetup",
   },
+  {
+    id: "m3",
+    title: "A third meetup",
+    image:
+      "https://tse1.mm.bing.net/th?id=OIP.yQV9YN97q7-pD-MDLHFaJAHaEK&pid=Api&P=0&h=180",
+    address: "bbbbb",
+    description: "this is the third meetup",
+  },
 ];
 const MeetupDetails = () => {
   const route = useRouter();
