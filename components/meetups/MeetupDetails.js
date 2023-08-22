@@ -26,17 +26,17 @@ const DUMMY_MEETUPS = [
     description: "this is the third meetup",
   },
 ];
-const MeetupDetails = () => {
+const MeetupDetails = (props) => {
   const route = useRouter();
   const id = route.query.meetupid;
   console.log("route", route.query);
   const detail = DUMMY_MEETUPS.find((meetup) => meetup.id === id);
-  console.log(detail);
+  console.log(props);
   return (
     <>
-      <img src={detail.image} />
-      <h2>{detail.title}</h2>
-      <h3>{detail.address}</h3>
+      <img src={props.image} />
+      <h2>{props.title}</h2>
+      <h3>{props.address}</h3>
     </>
   );
 };
